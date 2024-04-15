@@ -54,9 +54,9 @@ function buttonClick(event){
 }
 
 function addValue(value){
-    if (value === '.'){
-        const lastOperatorIndex = expression.search(/[+\-*/]/);
-        const lastDecimalIndex = expression.lastIndexOf('.');
+    //if (value === '.'){
+        //const lastOperatorIndex = expression.search(/[+\-*/]/);
+        /*const lastDecimalIndex = expression.lastIndexOf('.');
         const lastNumberIndex = Math.max(
             expression.lastIndexOf('+'),
             expression.lastIndexOf('-'),
@@ -72,9 +72,9 @@ function addValue(value){
         ) {
             expression += value;
         }
-    } else {
+    } else {*/
         expression += value;
-    }
+    //}
 }
 function updateDisplay(expression, result){
     expressionDiv.textContent = expression;
